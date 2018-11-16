@@ -1,27 +1,21 @@
-public static void main(String args[]){
+package level1;
 
-    Scanner scanner = new Scanner(System.in);
-    System.out.print("Input > ");
+public class FizzBuzz {
 
-    String input = scanner.nextLine();
-
-    System.out.println(input);
-    scanner.close();
-    int num = 0;
-
-    FizzBuzz(num);
-}
-
-private String FizzBuzz(int num) {  
-    if(num % 3 = 0 && num % 5 = 0){
-        return System.out.println("fizzbuzz");
-    }
-
-    if(num % 3 = 0){
-        return System.out.println("fizz");
-    }
-
-    if(num % 5 = 0){
-        return System.out.println("buzz");
-    }
+	public static void main(String[] args) { 
+		    for (int i = 1; i <= 100; i++) {
+			    if(i % 3 == 0 && i % 5 == 0){
+			    	System.out.println("FizzBuzz");
+			    }
+			    else if(i % 3 == 0){
+			        System.out.println("Fizz");
+			    }
+			    else if(i % 5 == 0){
+			        System.out.println("Buzz");
+			    }
+			    else if(!(i % 3 == 0) || !(i % 5 == 0) ){
+			    	System.out.println(i);
+			    }
+		}
+	}
 }
